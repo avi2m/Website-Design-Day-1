@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(146, 146, 245);
+    padding: 0.5rem;
+}
+
+.navbar h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.products .items{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+gap: 0.6rem;
+
+}
+
+.products .items img{
+    height: 64px;
+}
+.products .items p{
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.view2{
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.view2 img{
+    width: 90vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.information{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+
+.table-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: grey;
+    padding: 1rem;
+}
+
+
+
+
+
+th {
+    background: linear-gradient(to right, #7b6cd9, #8a7be0);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+td {
+    padding: 1rem;
+    border: 1px solid rgb(47, 36, 36);
+    font-size: 1rem;
+}
+
+
+tbody tr {
+    background-color: grey;
+}
+
+
+.old {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.view3{
+    display: flex;
+    flex-direction: column;  
+    gap: 1.5rem;            
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+
+.view3 .paragraph{
+    line-height: 1;
+}
+
+
+.view3 .paragraph h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;   
+}
+
+
+.view3 .paragraph p{
+    font-size: 1rem;
+    margin-bottom: 10px;  
+}
+
+/* list */
+.view3 ul{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+   padding: 1.5rem;
+   font-size: 1.3rem;
+}
+
+@media (max-width: 480px){
+
+    /* Navbar */
+    .navbar h1{
+        font-size: 1.2rem;
+    }
+
+    /* Products section */
+    .products{
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .products .items{
+        width: 40%;
+    }
+
+    .products .items img{
+        height: 55px;
+    }
+
+    .products .items p{
+        font-size: 0.9rem;
+    }
+
+    /* Banner image */
+    .view2{
+        padding: 1rem;
+    }
+
+    .view2 img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Table */
+    table{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    th, td{
+        padding: 0.5rem;
+    }
+
+    /* Text section */
+    .view3{
+        padding: 1.2rem;
+    }
+
+    .view3 .paragraph h2{
+        font-size: 1.2rem;
+    }
+
+    .view3 .paragraph p{
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
